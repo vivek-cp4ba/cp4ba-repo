@@ -1,0 +1,19 @@
+"cp4ba":
+  "db_server": "161.202.168.37"
+  "namespace": "gitops-cp-cp4ba-operator"
+  "odm_db_name": "odmdb"
+  "odm_db_port": "50000"
+  "odm_db_type": "db2"
+  "odm_image_repository": "cp.icr.io/cp/cp4a/odm"
+  "odm_image_tag": "21.0.3-IF002"
+  "odm_image_version": "21.0.3"
+"odmdbsecret":
+  "db_password": "P@ssw0rd"
+  "db_user": "db2inst1"
+  "namespace": "gitops-cp-cp4ba-operator"
+"odmldapsecret":
+  "ldapPassword": "P@ssw0rd"
+  "ldapUsername": "cn=root"
+  "namespace": "gitops-cp-cp4ba-operator"
+"values_file": "values-default.yaml"
+

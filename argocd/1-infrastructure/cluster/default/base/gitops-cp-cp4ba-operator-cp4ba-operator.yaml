@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-cp-cp4ba-operator-cp4ba-operator
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: gitops-cp-cp4ba-operator
+    server: https://kubernetes.default.svc
+  project: 1-infrastructure
+  source:
+    path: payload/1-infrastructure/namespace/gitops-cp-cp4ba-operator/cp4ba-operator
+    repoURL: https://github.com/vivek-cp4ba/cp4ba-repo
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []

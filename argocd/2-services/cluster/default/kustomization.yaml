@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - base/gitops-cp-cp4ba-operator-cp4ba-operator.yaml
   - base/gitops-cp-cp4ba-operator-db-secret.yaml
+  - base/gitops-cp-cp4ba-operator-ldap-secret.yaml

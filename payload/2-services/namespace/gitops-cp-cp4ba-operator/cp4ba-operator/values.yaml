@@ -1,0 +1,7 @@
+"cp4ba":
+  "channel": "v21.3"
+  "namespace": "gitops-cp-cp4ba-operator"
+  "source": "ibm-operator-catalog"
+  "sourceNamespace": "openshift-marketplace"
+"values_file": "values-default.yaml"
+
